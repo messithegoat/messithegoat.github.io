@@ -17,6 +17,8 @@
     xhr.open("POST",url,true);
    
     xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xhr.setRequestHeader('X-Xsrftoken','2|5b9ee41a|f7d61295e4267ae834aa5a809c9e24d9|1609963477');
+    
     
     xhr.send(JSON.stringify(data));
    </script>
